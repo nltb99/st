@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FuraCode Nerd Font:pixelsize=12:antialias=true:autohint=true";
+static char *font = "FuraCode Nerd Font:pixelsize=14.5:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -96,32 +96,32 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#282828",
+	"#f43753",
+	"#c9d05c",
+	"#ffc24b",
+	"#67CAEF",
+	"#d3b987",
+	"#73cef4",
+	"#eeeeee",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#4c4c4c",
+	"#f43753",
+	"#c9d05c",
+	"#ffc24b",
+	"#67CAEF",
+	"#d3b987",
+	"#73cef4",
+	"#feffff",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
+	"#eeeeee",
 	"#555555",
-	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+	"#eeeeee", /* default foreground colour */
+	"#181818", /* default background colour */
 };
 
 
@@ -141,14 +141,14 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 130;
+static unsigned int rows = 35;
 
 /*
  * Default colour and shape of the mouse cursor
@@ -161,7 +161,7 @@ static unsigned int mousebg = 0;
  * Color used to display font attributes when fontconfig selected a font which
  * doesn't match the ones requested.
  */
-static unsigned int defaultattr = 11;
+static unsigned int defaultattr = 14;
 
 /*
  * Force mouse select/shortcuts while mask is active (when MODE_MOUSE is set).
