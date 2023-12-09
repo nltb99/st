@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "FuraCode Nerd Font:pixelsize=14.5:antialias=true:autohint=true";
+static char *font = "FuraCode Nerd Font:pixelsize=14.5:antialias=true:autohint=true:style=retina";
+char *xres = "Xft.dpi: 96";
 static int borderpx = 2;
 
 /*
@@ -185,7 +186,7 @@ static MouseShortcut mshortcuts[] = {
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
-#define TERMMOD (ControlMask|ShiftMask)
+#define TERMMOD (Mod1Mask|Mod2Mask)
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
